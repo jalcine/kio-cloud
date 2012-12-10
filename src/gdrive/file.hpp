@@ -18,21 +18,25 @@
 */
 
 
-#include "structure.hpp"
+#ifndef KIO_GOOGLEDRIVE_FILE_HPP
+#define KIO_GOOGLEDRIVE_FILE_HPP
 
-using namespace KIO::GoogleDrive;
+#include "resource.hpp"
 
-Structure::Structure(const KUrl& url, QObject* parent): QObject(parent)
+namespace KIO {
+
+namespace GoogleDrive {
+
+class File : public KIO::GoogleDrive::Resource
 {
-  Q_UNUSED(url)
+
+public:
+    explicit File(const KUrl& url, QObject* parent = 0);
+    virtual ~File();
+};
+
 }
 
-void Structure::setUrl(const KUrl& url)
-{
-  Q_UNUSED(url)
 }
 
-const KUrl Structure::url() const
-{
-  return KUrl();
-}
+#endif // KIO_GOOGLEDRIVE_FILE_H

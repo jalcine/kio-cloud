@@ -18,8 +18,8 @@
 */
 
 
-#ifndef KIO_GOOGLEDRIVE_STRUCTURE_H
-#define KIO_GOOGLEDRIVE_STRUCTURE_H
+#ifndef KIO_GOOGLEDRIVE_RESOURCE_H
+#define KIO_GOOGLEDRIVE_RESOURCE_H
 
 #include <QObject>
 #include <KUrl>
@@ -27,19 +27,22 @@
 namespace KIO {
 namespace GoogleDrive {
 
-class Structure : public QObject
+class Resource : public QObject
 {
-    Q_OBJECT
-    Q_PROPERTY(const KUrl url)
+  Q_OBJECT
+  Q_PROPERTY(const KUrl url)
 
 public:
-    explicit Structure(const KUrl& url, QObject* parent = 0);
-    const KUrl url() const;
-    void setUrl(const KUrl& url);
+  explicit Resource(const KUrl& url, QObject* parent = 0);
+  const KUrl url() const;
+  void setUrl(const KUrl& url);
+
+private:
+  KUrl _url;
 };
 
 }
 
 }
 
-#endif // KIO_GOOGLEDRIVE_STRUCTURE_H
+#endif // KIO_GOOGLEDRIVE_RESOURCE_H

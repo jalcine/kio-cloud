@@ -1,9 +1,9 @@
 include_directories(${KDE4_INCLUDES} ${CMAKE_CURRENT_DIR})
 
+file(GLOB_RECURSE kio_gdrive_PART_SRCS "*.cpp")
+
 add_subdirectory(wallet)
 add_subdirectory(gdrive)
-
-file(GLOB_RECURSE kio_gdrive_PART_SRCS "*.cpp")
 
 add_library(kio_gdrive SHARED ${kio_gdrive_PART_SRCS})
 
