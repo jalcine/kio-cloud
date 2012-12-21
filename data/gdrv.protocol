@@ -1,0 +1,7 @@
+[Protocol]
+DocPath=kioslave/kio_gdrv.html
+exec=kio_gdrv
+input=none
+output=filesystem
+protocol=gdrv
+reading=true

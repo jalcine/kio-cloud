@@ -1,5 +1,4 @@
 #include <KDebug>
-#include "constants.hpp"
 #include "kio.hpp"
 
 using namespace KIO::GDrive;
@@ -17,7 +16,7 @@ void Client::get( const KUrl &url )
 }
 
 Client::Client( const QByteArray &pool, const QByteArray &app )
-: SlaveBase( KIO_GDRIVE_PROTOCOL, pool, app ) {}
+: SlaveBase( "gdrv" , pool, app ) {}
 
 
 

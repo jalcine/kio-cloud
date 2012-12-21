@@ -1,17 +1,7 @@
-kio-googledrive
-===============
+kio-cloud
+=================================
 
-Provides a KIO client to the Google Drive file system.
+A means of incorporating cloud file storages natively in KDE.
 
-## Foreword
-
-__The following is from (jalcine)[http://jalcine.me]__
-
-The idea came simply to me. I was eager to make a contribution to KDE and I had
-a huge need of Google Drive integration with my file browser, that being Dolphin,
-for easier file synchronization. Thus `kio-googledrive` was born.
-
-## Implementation
-
-The API to Google Drive is built within the plug-in, but consideration has been
-made to remove it and allow it to grow, independent of this client.
+# Abstract
+This collection of software includes the following collections of source code:
