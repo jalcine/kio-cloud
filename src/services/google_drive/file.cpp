@@ -21,17 +21,12 @@
 
 using namespace KIO::GoogleDrive;
 
-File::File(const KUrl& url, QObject* parent): Resource(parent)
+File::File(const KUrl& url, QObject* parent): Resource(url,parent)
 {
 
 }
 
-File::~QObject()
-{
-
-}
-
-File::File()
+File::~File()
 {
 
 }
