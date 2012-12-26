@@ -1,7 +1,5 @@
 project(kio_cloud_googledrive)
 
-find_package(KDE4 REQUIRED)
-
 file(GLOB KIO_CLOUD_GOOGLEDRIVE_SRCS "*.cpp")
 file(GLOB KIO_CLOUD_GOOGLEDRIVE_HDRS "*.hpp")
 

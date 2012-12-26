@@ -1,7 +1,0 @@
-[Protocol]
-DocPath=kioslave/kio_cloud.html
-exec=kio_cloud
-input=none
-output=filesystem
-protocol=cloud
-reading=true
