@@ -7,7 +7,7 @@ namespace KIO {
         class Module : public KCModule {
 
         public:
-            Module();
+	    Module(QWidget *parent, const QVariantList &args);
             virtual ~Module();
       };
     }
