@@ -1,6 +1,6 @@
 /*
-    <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) 2012  Jacky Alcine <jackyalcine@gmail.com>
+    KIO::Cloud - providing KIO support to our favorite cloud services.
+    Copyright (C) 2012  Jacky Alcine <me@jalcine.me>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22,6 +22,7 @@
 #define KIO_CLOUD_CONFIGURATION_FACTORY_HPP
 
 #include <KComponentData>
+#include <KPluginFactory>
 
 
 namespace KIO {
@@ -30,13 +31,14 @@ namespace Cloud {
 
 namespace Configuration {
 
-class Factory : public KComponentData
+class Factory : public KPluginFactory
 {
 
 public:
-    Factory();
-    Factory(const KComponentData& data );
+    Factory( );
+    virtual QObject* create(const char* iface, QWidget* parentWidget, QObject* parent, const QVariantList& args, const QString& keyword);
     virtual ~Factory();
+    
 };
 
 }
