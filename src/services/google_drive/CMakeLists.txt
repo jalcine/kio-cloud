@@ -13,6 +13,3 @@ set_target_properties(kio_gdrv PROPERTIES
 
 install(TARGETS kio_gdrv
         DESTINATION ${PLUGIN_INSTALL_DIR})
-
-install(FILES "${CMAKE_SOURCE_DIR}/data/gdrv.protocol"
-        DESTINATION ${SERVICES_INSTALL_DIR})
