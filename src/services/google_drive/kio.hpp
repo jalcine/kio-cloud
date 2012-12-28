@@ -7,23 +7,20 @@ namespace KIO {
   namespace GDrive {
     class Client : public KIO::SlaveBase {
       public:
-        /**
-         * @constructor
-         * Creates a new Client to the Google Drive system.
-         *
-         * @param pool
-         * @param app
-         */
         Client( const QByteArray &pool, const QByteArray &app );
-
-        /**
-         * @fn get
-         * Obtains the necessary data from a specific data within
-         * Google Drive.
-         *
-         * @param url
-         */
+	virtual ~Client();
         virtual void get( const KUrl &url );
+	virtual void read ( KIO::filesize_t size );
+	virtual void write ( const QByteArray &data );
+	virtual void seek(KIO::filesize_t offset);
+	virtual void close();
+	virtual void copy(const KUrl& src, const KUrl& dest, int permissions, JobFlags flags);
+	virtual void del(const KUrl& url, bool isfile);
+	virtual void put(const KUrl& url, int permissions, JobFlags flags);
+	virtual void mimetype(const KUrl& url);
+	virtual void mkdir(const KUrl& url, int permissions);
+	virtual void listDir(const KUrl& url);
+	virtual void rename(const KUrl& src, const KUrl& dest, JobFlags flags);
     };
   }
 }
