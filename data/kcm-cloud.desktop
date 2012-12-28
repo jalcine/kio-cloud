@@ -1,0 +1,15 @@
+[Desktop Entry]
+Comment=Provides a centralized panel for tweaking all of the cloud services in KIO.
+Name=KIO Cloud Storage
+Type=Service
+Exec=kcmshell4 kio_cloud
+Categories=Qt;KDE;X-KDE-settings-system;
+X-KDE-ServiceTypes=KCModule
+X-KDE-ParentApp=kcontrol
+X-KDE-System-Settings-Parent-Category=settings-network-and-connectivity
+X-KDE-Keywords=cloud storage;cloud;third party storage
+X-KDE-Library=kio_cloud
+X-KDE-PluginInfo-Author=Jacky Alcine
+X-KDE-PluginInfo-Email=me@jalcine.me
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Version=1.0$
