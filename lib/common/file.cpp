@@ -34,7 +34,6 @@ QString File::name() const
 
 void File::setName(QString const newName)
 {
-
 }
 
 int File::size() const
