@@ -1,10 +1,10 @@
-option(WITH_GOOGLE_DRIVE ON "Incorporate Google Drive support.")
-#option(WITH_DROPBOX ON "Incorporate DropBox support.")
+option(WITH_GOOGLE_DRIVE "Incorporate Google Drive support." ON)
+option(WITH_DROPBOX "Incorporate DropBox support." ON)
 
 if (WITH_GOOGLE_DRIVE)
-  add_subdirectory(google_drive)
+  add_subdirectory(googledrive)
 endif(WITH_GOOGLE_DRIVE)
 
 if (WITH_DROPBOX)
- add_subdirectory(dropbox)
+#add_subdirectory(dropbox)
 endif(WITH_DROPBOX)
