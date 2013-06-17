@@ -1,5 +1,5 @@
 /*
- *  kio-googledrive: Providing a native extension to Google Drive for Dolphin.
+ *  kio-dropbox: Providing a native extension to Dropbox for KIO.
  *  Copyright (C) 2012  Jacky Alcine <jackyalcine@gmail.com>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -24,14 +24,14 @@
 extern "C" int KDE_EXPORT kdemain( int argc, char **argv )
 {
   kDebug(7000) << "Entering function";
-  KComponentData instance( "kio_gdrive" );
-
+  KComponentData instance( "kio_dropbox" );
+  
   if (argc != 4)
   {
-    fprintf( stderr, "Usage: kio_gdrive protocol domain-socket1 domain-socket2\n");
+    fprintf( stderr, "Usage: kio_dropbox protocol domain-socket1 domain-socket2\n");
     exit( -1 );
   }
-
+  
   KIO::GDrive::Client slave( argv[2], argv[3] );
   slave.dispatchLoop();
   return 0;
