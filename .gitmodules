@@ -1,3 +1,0 @@
-[submodule "lib/dropbox"]
-	path = lib/dropbox
-	url = git://github.com/jalcine/QtDropbox
