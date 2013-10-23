@@ -18,6 +18,7 @@
  */
 
 #include "file.hpp"
+#include "file.moc"
 
 using namespace KIO::Cloud::Common;
 using KIO::Cloud::Common::File;
@@ -44,5 +45,3 @@ int File::size() const
 File::~File()
 {
 }
-
-#include "file.moc"

@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 2.8)
 
-find_package(KDE4 REQUIRED)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
+find_package(KDE4 REQUIRED)
 include_directories("${KDE4_INCLUDES}")
 
 add_subdirectory(lib)
