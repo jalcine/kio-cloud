@@ -4,7 +4,7 @@ Merging cloud storage services under one roof on [KDE](http://kde.org) using
 [KIO](http://api.kde.org/4.x-api/kdelibs-apidocs/kio/html/index.html) 
 technology.
 
-## Abstact
+## Abstract
 
 I wrote this suite of slaves for KIO out of a necessity. I was a bit tired 
 having to always sync files and even though we have clients that handle this, 
